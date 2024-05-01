@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/ttt.css">
+
+    <title>安否確認掲示板</title>
+</head>
+
+<body>
+    <header>
+        <div class="name font">
+            <h1>安否確認掲示板</h1>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <div id="contentHeader">
+                <!-- <h2>&#x1F494; 安否情報</h2> -->
+                <input type="submit" for="information" name="information" id="information" value="&#x1F494;安否情報を入力してください">
+
+            </div>
+        </nav>
+        <div>
+            <!-- <button id="login">ログイン</button> -->
+            <input type="submit" for="login" name="login" id="login" value="ログイン">
+        </div>
+            <nav>
+                <ul class="nav-menu">
+                    <input type="submit" for="whole" name="whole" id="whole" value="全体">
+                    <input type="submit" for="safe" name="safe" id="safe" value="安全">
+                    <input type="submit" for="damage" name="damage" id="damage" value="被害あり">
+                </ul>
+            </nav>
+            <select name="select" id="select" class="select-primary"name="全体"value="全体">
+                <option value="1">全体</option>
+                <option value="2">総務</option>
+                <option value="3">法務</option>
+                <option value="4">人事</option>
+                <option value="5">経理</option>
+                <option value="6">広告</option>
+            </select>
+            <div id="box">
+            <table id="itemList"> 
+                <thead>
+                    <tr>
+                      <th>被害状況</th>
+                      <th>名前</th>
+                      <th>部署</th>
+                      <th> 時間</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <div class="touch">
+
+                        <!-- <tr class="touch" title="場所:hhhhhhhhhhhhh">
+                            <td><img src="/front/images/heart.png" alt="ロゴ" width="17">被害あり</td>
+                            <td>TWAL TAR THU</td>
+                            <td>A GROUP</td>
+                            <td>11:20</td>
+                        </tr> -->
+                            
+                        <!-- <tr>
+                            <td><img src="/front/images/heart.png"alt="ロゴ" width="17">被害あり</td>
+                            <td class="CellWithComment">TWAL TAR THU 
+                                <span class="CellComment">ttt<br>hhh</span>
+                            </td>
+                            <td>A GROUP</td>
+                            <td>11:20</td>
+                        </tr> -->
+
+
+                        <tr class="dropdown">
+                            
+                            <td>
+                                
+                                <ul>
+                                    <li class="option">
+                                        <img src="/images/heart.png"alt="ロゴ" width="17">
+                                        被害あり
+    
+                                        <ul>
+                                            <li>2</a></li>
+                                            <li>3</a></li>
+                                            <li>4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                            </td>
+                            <td>
+                                
+                                <ul>
+                                    <li class="option">
+                                        TWAL TAR Thu
+    
+                                        <ul>
+                                            <li>2</a></li>
+                                            <li>3</a></li>
+                                            <li>4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>B GROUP</td>
+                            <td>12:30</td>
+                        </tr>
+                       
+                       
+
+                        
+                    </div>
+                    <tr>
+                        <td><img src="/images/material-symbols_ecg-heart-sharp (1).png"alt="ロゴ" width="17">被害なし</td>
+                        <td>TWAL TAR </td>
+                        <td>B GROUP</td>
+                        <td>12:30</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/material-symbols_ecg-heart-sharp (4).png"alt="ロゴ" width="17">未入力</td>
+                        <td>TWAL </td>
+                        <td>C GROUP</td>
+                        <td>11:00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <!-- <div id="b">
+                    <p> &#128148;被害あり</p>
+                    <p>TWAL TAR THU</p>
+                    <p>A GROUP</p>
+    
+                </div> -->
+            </div>
+        <!-- <textarea  name="box" id="box" cols="180" rows="20"  required></textarea> -->
+     </main>
+     <script src="/jvm1.js"></script>
+
+</body>
+</html>
